@@ -1,2 +1,0 @@
-# ojsadnajnsiuaiusn
-print('a')

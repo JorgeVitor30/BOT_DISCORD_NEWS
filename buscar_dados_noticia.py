@@ -1,14 +1,16 @@
 import requests
 from bs4 import BeautifulSoup
 
-page = requests.get('https://g1.globo.com/ultimas-noticias/')
+page = requests.get('https://www.cnnbrasil.com.br/ultimas-noticias/')
 
-soup = BeautifulSoup(page.content, 'html.parser')
+page_content = page.content
+
+soup = BeautifulSoup(page_content, 'html.parser')
 
 
 atributos = {'class': 'a'}
 
-link = soup.find_all('a', class_="feed-post-link gui-color-primary gui-color-hover")[0]
+link = soup.find_all('a', class_="home__list__tag")[0]
 
 
 print(link)

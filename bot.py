@@ -11,8 +11,8 @@ class MeuBot(discord.Client):
         pass
     
     async def on_message(self, message):
-        if message.content == "#regras":
-             await message.guild.send("CLB COUTO LIXO SMT")
+        if "#regras" in message.content:
+            await message.channel.send("CLB COUTO LIXO SMT")
     
     
 

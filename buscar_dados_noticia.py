@@ -15,3 +15,4 @@ class BuscarDados:
         noticia = soup.find_all('a', class_="home__list__tag")[0]['href']
 
         return noticia
+    

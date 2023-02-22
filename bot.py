@@ -32,13 +32,11 @@ async def envio_noticias():
         link = use_link
         await channel.send("MAIS UMA NOTÍCIA 🤮")
         await channel.send(link)
-        await channel.send("@everyone")
 
     elif i == 0:    
         i += 1
         await channel.send("MAIS UMA NOTÍCIA 🤮")
         await channel.send(link)
-        await channel.send("@everyone")
     else:
         return
         
